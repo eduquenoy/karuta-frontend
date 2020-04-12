@@ -207,7 +207,7 @@ function fill_list_page()
 									}
 								});
 							}
-							if (!USER.admin && !USER.creator && portfolios_list.length==1) {
+							if (!USER.admin && !USER.creator && (portfolios_list.length==1 || autoLoad) ) {
 								var uuid = portfolios_list[0].rootid;
 								display_main_page(uuid);
 							}

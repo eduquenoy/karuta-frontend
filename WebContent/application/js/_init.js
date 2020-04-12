@@ -9,13 +9,16 @@ var bckname = '';
 var serverBCK = "../../../karuta-backend"+bckname; // fileserver backend
 var serverBCK_API = "../../../karuta-backend"+bckname+"/rest/api";
 var cas_url = "";
+
+//------ TEST ERIC -----
+var autoLoad=true;
 //-------- LANGUAGES------------
 var languages = [];
 languages [0] = 'en';
 languages [1] = 'fr';
 //----------------------------------
 var NONMULTILANGCODE = 0;  // default language if non-multilingual
-var LANGCODE = 0; //default value
+var LANGCODE = 1; //default value
 var LANG = languages[LANGCODE]; //default value
 //----------------------------------
 var audiovideohtml5 = true;
@@ -40,7 +43,7 @@ var welcome3 = {};       // Welcome paragraph
 	welcome3["en"] = "";
 //---------MAIN PAGE-------------------------
 var welcome4 = {};			//  Welcome title
-	welcome4["fr"] = "BIENVENUE DANS KARUTA 2.4";
+	welcome4["fr"] = "BIENVENUE DANS KARUTA 2.4 et des poussières";
 	welcome4["en"] = "WELCOME TO KARUTA 2.4";
 var welcome5 = {}; 			//  Welcome sub-title
 	welcome5["fr"] = "PORTFOLIO OPEN SOURCE";
