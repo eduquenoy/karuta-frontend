@@ -1268,8 +1268,10 @@ function getEmail(role,emails) {
 function sendEmailPublicURL(encodeddata,email,langcode,sharetomessage,sharetoobj) {
 //==================================
 	var url = window.location.href;
-	var serverURL = url.substring(0,url.indexOf('/application/htm/karuta.htm'));
-	url = serverURL+"/application/htm/public.htm?i="+encodeddata+"&amp;lang="+languages[langcode];
+//	var serverURL = url.substring(0,url.indexOf('/application/htm/karuta.htm'));
+var serverURL = url.substring(0,url.indexOf("/"+appliname+"/"));//Modif Eric 1 juillet 2020
+//	url = serverURL+"/application/htm/public.htm?i="+encodeddata+"&amp;lang="+languages[langcode];
+url = serverURL+"/"+appliname+"/application/htm/public.htm?i="+encodeddata+"&amp;lang="+languages[langcode]; //Modif. Eric juillet 2020
 	//------------------------------
 	var message = "";
 	message = g_sendEmailPublicURL_message.replace("#firstname#",USER.firstname);
